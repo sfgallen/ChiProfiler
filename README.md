@@ -40,3 +40,5 @@ Enter following code into the command line:
         addpath C:\path\to\where\you\installed\TopoToolbox-2\topoapp
         addpath C:\path\to\where\you\installed\TopoToolbox-2\DEMdata
         addpath C:\path\to\where\you\installed\TopoToolbox-2\ChiProfiler
+        
+ChiProfiler also comes with a user guide that can help you get started.
