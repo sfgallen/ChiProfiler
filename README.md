@@ -2,7 +2,7 @@
 
 A series of MATLAB functions that utilizes TopoToolbox to analyze river longitudinal profiles
 
-ChiProfiler is a series of Matlab functions that utilize TopoToolbox version 2 (Schwanghart and Scherler, 2014) to conduct river profile analysis using the chi or integral method (Perron and Royden, 2013). ChiProfiler also allows users to generate maps of river network metrics, such as the normalized steepness index (ksn) and the integral quantity chi (Wobus et al., 2006; Willett et al., 2014). ChiProfiler was developed by Sean Gallen and is shortly described and applied in Gallen and Wegmann (in press). All users need to do is download TopoToolbox (https://topotoolbox.wordpress.com/) and it is easy to run ChiProfiler in Matlab.
+ChiProfiler is a series of Matlab functions that utilize TopoToolbox version 2 (Schwanghart and Scherler, 2014) to conduct river profile analysis using the chi or integral method (Perron and Royden, 2013). ChiProfiler also allows users to generate maps of river network metrics, such as the normalized steepness index (ksn) and the integral quantity chi (Wobus et al., 2006; Willett et al., 2014). ChiProfiler was developed by Sean Gallen and is shortly described and applied in Gallen and Wegmann (in press). Please cite Gallen and Wegmann (in press) if you use these codes for scientific research. All users need to do is download TopoToolbox (https://topotoolbox.wordpress.com/) and it is easy to run ChiProfiler in Matlab.
 
 If you have any questions or comments please contact the author:
 
