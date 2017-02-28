@@ -25,7 +25,7 @@ Wobus, C., Whipple, K.X., Kirby, E., Snyder, N., Johnson, J., Spyropolou, K., Cr
 
 ## Requirements
 
-TMatlab 2011b or higher, the MATLAB Image Processing Toolbox, and TopoToolbox.
+Matlab 2011b or higher, the MATLAB Image Processing Toolbox, and TopoToolbox.
 
 ## Getting started
 
