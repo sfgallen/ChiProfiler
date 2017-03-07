@@ -42,5 +42,5 @@ close('Profiles');
 % declare user picked stream object.
 S = eval(cont_opt);
 fileTag = [fileTag,'_', cont_opt];
-chi_profiler(DEMc, S, fileTag, 'crita', crita, 'mn', mn, 'Ao', Ao,...
+chi_profiler(DEM, S, fileTag, 'crita', crita, 'mn', mn, 'Ao', Ao,...
     'smoWin', smoWin);
