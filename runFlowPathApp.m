@@ -42,10 +42,7 @@ if ischar(DEM)
     if ~isempty(strfind(DEM,'.tif') || strfind(DEM,'.txt'))
         % make GRIDobj and remove nan values from DEM
         DEM = GRIDobj(DEM);
-        DEM.Z(DEM.Z==-32767) = nan;
-        DEM.Z(DEM.Z==-32768) = nan;
-        DEM.Z(DEM.Z==-32456) = nan;
-        DEM.Z(DEM.Z==-9999) = nan;
+        DEM.Z(DEM.Z<=-9999) = nan;
     else
         error('input file name does not have .tif or .txt file extension');
     end
