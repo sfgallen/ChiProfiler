@@ -2,7 +2,7 @@
 
 A series of MATLAB functions that utilizes TopoToolbox to analyze river longitudinal profiles
 
-ChiProfiler is a series of Matlab functions that utilize TopoToolbox version 2 (Schwanghart and Scherler, 2014) to conduct river profile analysis using the chi or integral method (Perron and Royden, 2013). ChiProfiler also allows users to generate maps of river network metrics, such as the normalized steepness index (ksn) and the integral quantity chi (Wobus et al., 2006; Willett et al., 2014). ChiProfiler was developed by Sean Gallen and is shortly described and applied in Gallen and Wegmann (in press). Please cite Gallen and Wegmann (in press) if you use these codes for scientific research. All users need to do is download TopoToolbox (https://topotoolbox.wordpress.com/) and it is easy to run ChiProfiler in Matlab.
+ChiProfiler is a series of Matlab functions that utilize TopoToolbox version 2 (Schwanghart and Scherler, 2014) to conduct river profile analysis using the chi or integral method (Perron and Royden, 2013). ChiProfiler also allows users to generate maps of river network metrics, such as the normalized steepness index (ksn) and the integral quantity chi (Wobus et al., 2006; Willett et al., 2014). ChiProfiler was developed by Sean Gallen and is shortly described and applied in Gallen and Wegmann (2017). Please cite Gallen and Wegmann (in press) if you use these codes for scientific research. All users need to do is download TopoToolbox (https://topotoolbox.wordpress.com/) and it is easy to run ChiProfiler in Matlab.
 
 If you have any questions or comments please contact the author:
 
@@ -12,7 +12,7 @@ sean.gallen[at]erdw.ethz.ch
 
 ## References
 
-Gallen, S.F., Wegmann, K.W.: River profile response to normal fault growth and linkage: An example from the Hellenic forearc of south-central Crete, Greece, Earth Surf. Dynam., in press, http://www.earth-surf-dynam-discuss.net/esurf-2016-52/.
+Gallen, S.F., Wegmann, K.W.: River profile response to normal fault growth and linkage: An example from the Hellenic forearc of south-central Crete, Greece, Earth Surf. Dynam., 2017, http://www.earth-surf-dynam.net/5/161/2017/.
 
 Perron, J.T., Royden, L.: An integral approach to bedrock river profile analysis, Earth Surf. Processes Landforms, 38, 570-576, 2013. http://dx.doi.org/10.1002/esp.3302
 
