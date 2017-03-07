@@ -77,6 +77,8 @@ if ~exist(folder, 'dir')
 end
 
 %% create varables with topotoolbox functions
+% set nan values if it hasn't already been done
+DEM.Z(DEM.Z <= -9999) = NaN;
 % declare cellsize
 cs = DEM.cellsize;
 
