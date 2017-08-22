@@ -2,7 +2,7 @@
 
 A series of MATLAB functions that utilizes TopoToolbox to analyze river longitudinal profiles
 
-ChiProfiler is a series of Matlab functions that utilize TopoToolbox version 2 (Schwanghart and Scherler, 2014) to conduct river profile analysis using the chi or integral method (Perron and Royden, 2013). ChiProfiler also allows users to generate maps of river network metrics, such as the normalized steepness index (ksn) and the integral quantity chi (Wobus et al., 2006; Willett et al., 2014). ChiProfiler was developed by Sean Gallen and is shortly described and applied in Gallen and Wegmann (2017). Please cite Gallen and Wegmann (in press) if you use these codes for scientific research. All users need to do is download TopoToolbox (https://topotoolbox.wordpress.com/) and it is easy to run ChiProfiler in Matlab.
+ChiProfiler is a series of Matlab functions that utilize TopoToolbox version 2 (Schwanghart and Scherler, 2014) to conduct river profile analysis using the chi or integral method (Perron and Royden, 2013). ChiProfiler also allows users to generate maps of river network metrics, such as the normalized steepness index (ksn) and the integral quantity chi (Wobus et al., 2006; Willett et al., 2014). ChiProfiler was developed by Sean Gallen and is shortly described and applied in Gallen and Wegmann (2017). Please cite Gallen and Wegmann (2017) if you use these codes for scientific research. All users need to do is download TopoToolbox (https://topotoolbox.wordpress.com/) and it is easy to run ChiProfiler in Matlab.
 
 If you have any questions or comments please contact the author:
 
@@ -25,7 +25,7 @@ Wobus, C., Whipple, K.X., Kirby, E., Snyder, N., Johnson, J., Spyropolou, K., Cr
 
 ## Requirements
 
-Matlab 2011b or higher, the MATLAB Image Processing Toolbox, and TopoToolbox.
+Matlab 2014b or higher, the MATLAB Image Processing Toolbox, and TopoToolbox.
 
 ## Getting started
 
@@ -42,3 +42,7 @@ Enter following code into the command line:
         addpath C:\path\to\where\you\installed\TopoToolbox-2\ChiProfiler
         
 ChiProfiler also comes with a user guide that can help you get started.
+
+## Notes
+
+Some people have reported errors associated with the river profile analysis GUI for specific versions of Matlab (2015a, I think). This apparently has to do with a bug in the Matlab command 'gtext' that is called to put information on the ksn regressions on the figure. If you run into this problem, try updating the version of Matlab that you are using.
