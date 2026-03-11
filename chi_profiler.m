@@ -85,10 +85,10 @@ cs = DEM.cellsize;
 % flow routing options
 if isempty(p.Results.flowOption)
     FD = FLOWobj(DEM);
-elseif strcmp(p.Results.flowOption, 'fill');
+elseif strcmp(p.Results.flowOption, 'fill')
     DEM = fillsinks(DEM);
     FD = FLOWobj(DEM);
-elseif strcmp(p.Results.flowOption, 'carve');
+elseif strcmp(p.Results.flowOption, 'carve')
     FD = FLOWobj(DEM,'preprocess','carve');
     DEM = imposemin(FD,DEM);
 else
@@ -133,7 +133,7 @@ Sa = (Ao./(A.Z(GridID))).^mn;       % chi transformation variable
 
 h = waitbar(0,'calculating \chi for user picked streams...');
 % calculating chi for the entire river network
-for lp = numel(Six):-1:1;
+for lp = numel(Six):-1:1
     Schi(Six(lp)) = Schi(Sixc(lp)) + (Sa(Sixc(lp))+(Sa(Six(lp))-Sa(Sixc(lp)))/2) *(abs(Sd(Sixc(lp))-Sd(Six(lp))));
     f = (numel(Six)+1 - lp)/numel(Six);
     waitbar(f,h);
@@ -166,7 +166,7 @@ minchi = nanmin(Schi); maxchi = nanmax(Schi);
 h = waitbar(0,'Smoothing data and plotting all streams...');
 profile_fig = figure(1);
 id1 = 0;
-for i = 1:length(strmBreaks);
+for i = 1:length(strmBreaks)
     strmInds = ordList(id1+1:strmBreaks(i)-1);
     SmoZ(strmInds) = smoothChannelZ(SmoZ(strmInds),smoWin,cs);
     subplot(3,1,1);
@@ -198,7 +198,7 @@ kp_data = [];
 
 id1 = 0;
 strmNum = 1;
-for i = 1:length(strmBreaks);
+for i = 1:length(strmBreaks)
     strmInds = ordList(id1+1:strmBreaks(i)-1);
     dataMat = nan(length(strmInds),11);
     % save stream channel data in a matrix
@@ -253,7 +253,7 @@ for i = 1:length(strmBreaks);
     id1 = strmBreaks(i);
 end
     
-if ~isempty(kp_data);
+if ~isempty(kp_data)
     % make knickpoint shapefile
     MP = struct('Geometry',{'Point'},...
         'X',num2cell(kp_data(:,10)),...
@@ -299,7 +299,7 @@ if ~isempty(kp_data);
 end
 
 ksnRegS = ksnReg.Z(GridID);
-if ~isempty(ksnRegS(~isnan(ksnRegS)));
+if ~isempty(ksnRegS(~isnan(ksnRegS)))
     
     % make shapefile of ksn regressions
     MP = struct('Geometry',{'Point'},...
@@ -371,7 +371,7 @@ txt = sprintf('Note: this may take a little time.\n');
 disp(txt);
 cont_opt = input('\ntype "y" for yes or "n" for no:  ','s');
 
-while ~strcmp(cont_opt,'y') && ~strcmp(cont_opt,'n'),
+while ~strcmp(cont_opt,'y') && ~strcmp(cont_opt,'n')
     %case where you didn't enter a, b, c, or d:
     disp(' ');
     disp('Yes(y) or No(n) only!!!')
@@ -400,7 +400,7 @@ if cont_opt == 'y'
     
     h = waitbar(0,'calculating \chi for full stream network...');
     % calculating chi for the entire river network
-    for lp = numel(Six):-1:1;
+    for lp = numel(Six):-1:1
         chis(Six(lp)) = chis(Sixc(lp)) + (Sa(Sixc(lp))+(Sa(Six(lp))-Sa(Sixc(lp)))/2) *(abs(Sx(Sixc(lp))-Sx(Six(lp))));
         f = (numel(Six)+1 - lp)/numel(Six);
         waitbar(f,h);
@@ -414,7 +414,7 @@ if cont_opt == 'y'
     % plot all of the river river profile data as thin gray lines
     h = waitbar(0,'Smoothing elevation data for full stream network...');
     id1 = 0;
-    for i = 1:length(strmBreaks);
+    for i = 1:length(strmBreaks)
         strmInds = ordList(id1+1:strmBreaks(i)-1);
         SmoZ(strmInds) = smoothChannelZ(Sz(strmInds),smoWin,cs);
         id1 = strmBreaks(i);

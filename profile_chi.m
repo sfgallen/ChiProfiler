@@ -261,7 +261,7 @@ end
 if save_opt == 'y'
     figure(profile_fig)
     plotname = [chanDir,'\', num2str(strmID), '_chi-plot'];
-    eval ([' print -depsc ',plotname,'.eps'])
+    print([plotname,'.pdf'], '-dpdf')
 elseif save_opt == 'n'
 end
 
